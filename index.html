@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="image-color">
+            <header>
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Lorem Ipsum</p>
+            </header>
+            <div id="box">
+                <form id="survey-form" action="#">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                    <label for="number" id="number-label">Age(optional)</label>
+                    <input id="number" type="number" min="5" max="100" placeholder="Enter your age">
+                    <label for="dropdown"> Dropdown</label>
+                        <select id="dropdown">
+                            <option value="">--Choose your option</option>
+                            <option>first option</option>
+                            <option>second option</option>
+                            <option>third option</option>
+                        </select>
+                        <p class="label">Radio</p>
+                    <div class="box-1">
+                        <label class="container"> One
+                            <input type="radio" name="1" value="one" checked>
+                            <span class="checkmark radio"></span>
+                        </label>
+                        <label class="container"> Two
+                            <input type="radio" name="1" value="two">
+                            <span class="checkmark radio"></span>
+                        </label>
+                        <label class="container"> Three
+                            <input type="radio" name="1" value="three">
+                            <span class="checkmark radio"></span>
+                        </label>
+                    </div>
+                        <p class="label">Checkbox</p>
+                    <div class="box-1">
+                        <label class="container"> One
+                            <input type="checkbox" name="" value="one" checked>
+                            <span class="checkmark checkbox"></span>
+                        </label>
+                        <label class="container"> Two
+                            <input type="checkbox" name="" value="two">
+                            <span class="checkmark checkbox"></span>
+                        </label>
+                        <label class="container"> Three
+                            <input type="checkbox" name="" value="three">
+                            <span class="checkmark checkbox"></span>
+                        </label>
+                    </div>
+                    <label for="">Any comments or suggestions?
+                        <textarea id="comments" placeholder="Enter your comment here ..."></textarea>
+                    </label>
+                    <button id="submit" type="submit">Submit</button>
+                </form>    
+            </div>
+        </div>
+    </body>
+</html>
